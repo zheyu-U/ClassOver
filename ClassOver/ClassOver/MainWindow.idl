@@ -1,0 +1,19 @@
+namespace ClassOver
+{
+    //runtimeclass Timer
+    //{
+    //    /*MyClass(String text);*/
+    //    Timer(Int32 h, Int32 m, Int32 s);
+    //    Int32 hh;
+    //    Int32 mm;
+    //    Int32 ss;
+    //}
+    [default_interface]
+    runtimeclass MainWindow : Microsoft.UI.Xaml.Window
+    {
+        MainWindow();
+        Int32 MyProperty;
+        Microsoft.UI.Windowing.AppWindow get_window{ get; };
+    }
+
+}

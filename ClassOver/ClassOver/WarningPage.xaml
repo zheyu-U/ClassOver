@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="ClassOver.WarningPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:ClassOver"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:FieldModifier="public"
+    Loaded="Page_Loaded"
+    mc:Ignorable="d">
+
+    <Grid
+        x:Name="LayoutRoot"
+        Grid.Row="3"
+        Grid.Column="3"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+
+        <!--<Button x:Name="Button" Click="ClickHandler">Click Me</Button>-->
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="500" />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            Name="cnter"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="150"
+            Text="--" />
+
+        <Button
+            Name="exitButton"
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Click="ClickHandler"
+            Content="关闭页面"
+            Visibility="Collapsed" />
+
+        <MediaPlayerElement
+            Grid.Row="2"
+            Grid.ColumnSpan="3"
+            MaxWidth="400"
+            AutoPlay="True"
+            Source="ms-appx:///Resources/10.mp3" />
+    </Grid>
+
+</Page>

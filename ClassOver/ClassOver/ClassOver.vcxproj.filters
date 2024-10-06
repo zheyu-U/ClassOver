@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml" />
+    <Page Include="WarningPage.xaml" />
+    <Page Include="MainPage.xaml" />
+    <Page Include="WarningWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MainWindow.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="SimpleTrayIcon\dllapi.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\dllmain.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\MyTrayMenu.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\TrayIcon.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\TrayIconManager.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\TrayMenuItem.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\TrayMenuItemBase.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\TrayMenuPopup.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\TrayMenuSeparator.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTrayIcon\Win32Exception.cpp">
+      <Filter>Tray</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Resources\resource.h" />
+    <ClInclude Include="SimpleTrayIcon\dllapi.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\framework.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\MyTrayMenu.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\TrayIcon.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\TrayIconManager.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\TrayMenuItem.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\TrayMenuItemBase.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\TrayMenuPopup.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\TrayMenuSeparator.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrayIcon\Win32Exception.h">
+      <Filter>Tray</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{e48dc53e-40b1-40cb-970a-f89935452892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tray">
+      <UniqueIdentifier>{bcff99a5-8a11-4c46-9e67-2dcdfafaf28b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{d78c1ef3-7f70-4ae7-9bc0-1261aef457e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ResTempl4.rct" />
+    <None Include="SimpleTrayIcon\SimpleTrayIcon.vcxproj">
+      <Filter>Tray</Filter>
+    </None>
+    <None Include="SimpleTrayIcon\SimpleTrayIcon.vcxproj.filters">
+      <Filter>Tray</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\icon.ico">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\r.rc">
+      <Filter>Assets</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\10.mp3">
+      <Filter>Assets</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res.resx">
+      <Filter>Assets</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

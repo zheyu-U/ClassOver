@@ -1,0 +1,117 @@
+﻿<Page
+    x:Class="ClassOver.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:ClassOver"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Loaded="Page_Loaded"
+    NavigationCacheMode="Disabled"
+    mc:Ignorable="d">
+
+    <StackPanel
+        MinWidth="600"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Top"
+        Orientation="Vertical">
+        <TextBlock
+            Name="title"
+            HorizontalAlignment="Center"
+            FontSize="56"
+            Text="ClassOver X cuntdown" />
+
+        <StackPanel Margin="0,50">
+            <TextBlock
+                Name="timer_title"
+                HorizontalAlignment="Left"
+                FontSize="32"
+                Text="计时器设置" />
+
+
+            <StackPanel
+                Margin="0,10"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+
+                <TextBlock
+                    Margin="0,10"
+                    VerticalAlignment="Top"
+                    FontSize="20"
+                    Text="选择计时器" />
+
+                <AppBarButton
+                    VerticalAlignment="Bottom"
+                    AutomationProperties.Name="Sort"
+                    Icon="More"
+                    IsCompact="True"
+                    ToolTipService.ToolTip="选择计时器">
+                    <AppBarButton.Flyout>
+                        <MenuFlyout x:Name="TimerSelecterBar">
+                            <MenuFlyoutItem
+                                Click="TimerSelect_click"
+                                Tag="rating"
+                                Text="By rating" />
+                        </MenuFlyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
+
+            </StackPanel>
+
+            <StackPanel>
+                <MenuBar
+                    MinHeight="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <MenuBarItem
+                        Name="timeSelecter_H"
+                        Title="时"
+                        MaxHeight="200" />
+                    <MenuBarItem
+                        Name="timeSelecter_M"
+                        Title="分"
+                        MaxHeight="200" />
+                    <MenuBarItem
+                        Name="timeSelecter_S"
+                        Title="秒"
+                        MaxHeight="200" />
+                </MenuBar>
+            </StackPanel>
+
+            <StackPanel
+                Margin="0,20"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+
+                <RepeatButton
+                    Name="new_timer"
+                    MinWidth="100"
+                    MinHeight="40"
+                    AnimatedIcon.State=""
+                    Click="new_h"
+                    Content="新建计时器" />
+                <RepeatButton
+                    Name="delete_timer"
+                    MinWidth="100"
+                    MinHeight="40"
+                    Margin="60,0"
+                    Click="delete_h"
+                    Content="删除该计时器" />
+                <Button
+                    Name="save_exit"
+                    MinWidth="100"
+                    MinHeight="40"
+                    Click="save_exit_h"
+                    Content="保存/关闭应用" />
+
+            </StackPanel>
+            <Button
+                x:Name="test"
+                Margin="0,20,0,0"
+                Click="ClickHandler"
+                Content="测试倒计时" />
+
+        </StackPanel>
+    </StackPanel>
+
+</Page>

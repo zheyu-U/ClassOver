@@ -1,0 +1,9 @@
+namespace ClassOver
+{
+    [default_interface]
+    runtimeclass WarningPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        WarningPage();
+        Int32 MyProperty;
+    }
+}

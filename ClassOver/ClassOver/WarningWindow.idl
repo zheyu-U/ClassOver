@@ -1,0 +1,10 @@
+namespace ClassOver
+{
+    [default_interface]
+    runtimeclass WarningWindow : Microsoft.UI.Xaml.Window
+    {
+        WarningWindow();
+        Int32 MyProperty;
+        Microsoft.UI.Windowing.AppWindow get_Wwindow{ get; };
+    }
+}
