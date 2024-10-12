@@ -249,7 +249,7 @@ namespace winrt::ClassOver::implementation
 		remainingSec = abs(remainingSec);
 		// 先检测一遍 注意 变为秒钟
 
-		while (abs(remainingSec) > 1)   // 留出一秒给系统
+		while (abs(remainingSec) >= 1)   
 		{
 			std::this_thread::sleep_for(seconds(1));
 

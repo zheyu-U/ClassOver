@@ -72,13 +72,13 @@ namespace winrt::ClassOver::implementation
 
         system_clock::duration dur = start - current;
 
-        int lesstime = duration_cast<seconds>(dur).count() + 10;
+        int lesstime = duration_cast<seconds>(dur).count() + 5;
 
         while (lesstime > 0)
         {
             current = system_clock::now();
             system_clock::duration dur = start - current;
-            lesstime = duration_cast<seconds>(dur).count() + 10;
+            lesstime = duration_cast<seconds>(dur).count() + 5;
 
             co_await ui_thread;
             cnter().Text(to_hstring(lesstime));

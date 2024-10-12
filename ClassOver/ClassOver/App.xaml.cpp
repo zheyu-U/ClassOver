@@ -70,6 +70,8 @@ namespace winrt::ClassOver::implementation
         windowNative->get_WindowHandle(&hWnd);
 
         window.Activate();
+
+        window.AppWindow().Hide();
     }
 
     void App::OnNavigationFailed(IInspectable const& sender, winrt::Microsoft::UI::Xaml::Navigation::NavigationFailedEventArgs const& e)

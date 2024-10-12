@@ -35,7 +35,7 @@
             Grid.Column="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            FontSize="150"
+            FontSize="220"
             Text="--" />
 
         <Button
@@ -53,7 +53,7 @@
             Grid.ColumnSpan="3"
             MaxWidth="400"
             AutoPlay="True"
-            Source="ms-appx:///Resources/10.mp3" />
+            Source="ms-appx:///Resources/5.mp3" />
     </Grid>
 
 </Page>
